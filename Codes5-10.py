@@ -17,3 +17,23 @@ def fibonachhi(n):
     return fib_seq[:n]
 x=int(input())
 print(f"The sequence is {fibonachhi(x)}")
+#8. Factorial
+def factorial(n):
+    return 1 if n==0 else n*factorial(n-1)
+x=int(input())
+print(f"The factorial is {factorial(x)}")
+#9. swap two variable
+def swap(a,b):
+    return b,a 
+a=int(input())
+b=int(input())
+print(f"The swapped values are {swap(a,b)}")
+#10. palindrome check
+def is_palindrome(s):
+    return s==s[::-1]
+s=input()
+if is_palindrome(s):
+    print(f"{s} is palindrome")
+else:
+    pritn(f"{s} is not palindrome")
+
